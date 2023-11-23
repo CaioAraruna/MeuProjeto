@@ -2,7 +2,6 @@ var email = input_email.value;
 var senha = input_senha.value;
 
 
-
 function autenticar() {
     autenticado = false;
 
