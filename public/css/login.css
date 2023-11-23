@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+    height: fit-content;
+}
+
+body{
+    background-color: black;
+    background-size: cover;
+    background-image: url(https://img.bleacherreport.net/img/images/photos/002/710/691/hi-res-461831687-cornerback-richard-sherman-of-the-seattle-seahawks_crop_north.jpg?1389983301&w=3072&h=2048);
+}
+
+
+.header{
+    display: flex;
+}
+
+nav{
+    padding: 15px 0px;
+    width: 100%;
+    display: flex-start;
+    justify-content: space-evenly;
+    height: 30px;
+    border: 3px solid rgb(88, 200, 55);
+    border-radius: 7px;
+    background-color: rgb(51, 56, 77);
+}
+
+
+#ajuste{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: -25px;
+}
+
+ul{
+    display: flex; 
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li{
+    padding: 0 50px;
+    list-style-position: inside;
+    border-left: 2px groove rgb(88, 200, 55);
+    border-right: 2px groove rgb(88, 200, 55);
+    border-radius: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(88, 200, 55);
+}
+
+
+.container_login{
+    width: 40%;
+    height: 450px;
+    background-color: rgba(51, 56, 77,.9);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 15px;
+    border: 2px solid rgb(88, 200, 55);
+    margin-top: 50px; 
+}
+
+.div_email, .div_senha{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    color: rgb(88, 200, 55);
+    margin-left: 190px;
+}
+
+.titulo_login{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#input_email, #input_senha{
+    width: 270px;
+    height: 20px;
+    border-radius: 10px;
+    margin-left: 30%;
+    border: 3px solid black;
+}
+
+.botao_login{
+    width: 200px;
+    border-radius: 15px;
+    height: 25px;
+    margin-left: 35%;
+    margin-top: 50px;
+    border: 2px solid black;
+}

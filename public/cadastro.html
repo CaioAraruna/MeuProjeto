@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <script src="./js/cadastro.js"></script>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <h1><a href="#header">Caio's Field</a></h1>
+
+            <ul>
+                <span id="ajuste">
+                <li><a href="./index.html">Tela Inicial</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./cadastro.html">Cadastro</a></li>
+                </span>
+            </ul>
+        </div>
+    </header>
+
+        <container class="container_login"> 
+            <h1 class="titulo_login">Cadastro</h1>
+
+            <div class="div_nome">
+               <p>Nome</p> 
+                <input type="text" id="input_nome" placeholder="Insira seu nome"> 
+                <div id="div_mensagem"></div>
+            </div>
+
+            <div class="div_email">
+               <p>E-mail</p> 
+                <input type="text" id="input_email" placeholder="Ex: xpto@gmail.com"> 
+                <div id="div_mensagem"></div>
+            </div>
+                
+            <div class="div_time">
+                <p>Time</p>
+                <input type="text" id="input_team" placeholder="Qual time você torce?"> 
+                <div id="div_mensagem"></div> <!-- Caso a senha ou e-mail estejam errados -->
+                <!-- VER COMO FAZER AQUELE INPUT COM OS NOMES DOS TIMES JA CADASTRADOS E COLOCAR UM "NENHUM TIME" -->
+            </div>
+
+            <div class="div_senha">
+                <p>Senha</p>
+                <input type="password" id="input_senha" placeholder="Insira a senha cadastrada"> 
+                <div id="div_mensagem"></div> <!-- Caso a senha ou e-mail estejam errados -->
+            </div>
+
+            <div class="div_confirmacaoSenha">
+                <p>Confirmação de Senha</p>
+                <input type="password" id="input_confirmacao" placeholder="Confirme sua Senha"> 
+                <div id="div_mensagem"></div> <!-- Caso a senha ou e-mail estejam errados -->
+            </div>
+
+            <button class="botao_cadastro" onclick="cadastrar()"> Cadastrar </a> </button>
+        </container>
+   
+</body>
+</html>

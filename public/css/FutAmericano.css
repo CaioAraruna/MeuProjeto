@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    font-family: poppins;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(51, 56, 77);
+}
+
+/* #div_separacao{
+    margin-top: 60px;
+} */
+
+header {
+    background-color: rgb(51, 56, 77);
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    /* backdrop-filter: blur(40px); */
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* #espaco{
+    background-color: green;
+    width: 100%;
+    height: 60px;
+} */
+
+nav {
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 0 50px;
+    list-style-position: inside;
+    border-left: 2px groove rgb(88, 200, 55);
+    border-right: 2px groove rgb(88, 200, 55);
+    border-radius: 15px;
+}
+
+/* h1 {
+    width: 200px;
+    margin: 0 50px;
+} */
+
+
+a {
+    text-decoration: none;
+    color: rgb(88, 200, 55);
+}
+
+.banner {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 18px;
+}
+
+.banner h1 {
+    padding: 0px 25px;
+}
+
+.banner p {
+    text-align: justify;
+}
+
+.banner #imagem {
+    background-image: url('https://images.pexels.com/photos/1618200/pexels-photo-1618200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    width: 50%;
+    height: 613px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(88, 200, 55);
+    border-radius: 10px;
+}
+
+.banner #texto {
+    color: white;
+    display: flex;
+    width: 50%;
+    height: 613px;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid  rgb(88, 200, 55); */
+    border-radius: 10px;
+}
+
+.banner #texto p {
+    border-left: 2px solid rgb(88, 200, 55);
+    padding-left: 20px;
+}
+
+.Ataque {
+    width: 100%;
+    max-height: 900px;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.cards {
+    margin-top: 50px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.cardOL {
+    width: 20%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(88, 200, 55);
+    padding: 10px 5px;
+    border-radius: 30px;
+    padding: 10px 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+    position: relative;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+
+.cardRecebedores {
+    width: 20%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(88, 200, 55);
+    border-radius: 20px;
+    padding: 10px 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+    position: relative;
+}
+
+.cardCorredores {
+    width: 20%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(88, 200, 55);
+    border-radius: 20px;
+    padding: 10px 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+    position: relative;
+}
+
+.cardQuaterback {
+    width: 20%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(88, 200, 55);
+    border-radius: 20px;
+    padding: 10px 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+    position: relative;
+}
+
+.Defesa {
+    width: 100%;
+    max-height: 900px;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.cardsD {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+.cardDL {
+    width: 20%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(88, 200, 55);
+    border-radius: 30px;
+    padding: 10px 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+    position: relative;
+}
+
+.cardLB {
+    width: 20%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(88, 200, 55);
+    border-radius: 30px;
+    padding: 10px 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+    position: relative;
+}
+
+.cardDB {
+    width: 20%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(88, 200, 55);
+    border-radius: 30px;
+    padding: 10px 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+    position: relative;
+}
+
+.cardIMG img {
+    width: 275px;
+    height: 200px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+}
+
+.Chutes {
+    width: 100%;
+    max-height: 900px;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.div_chutes{
+    display: flex;
+    flex-direction: column;
+}
+
+.punt {
+    display: flex;
+    justify-content: center;
+}
+
+.punt img {
+    padding: 40px 10px 0 60px;
+    width: 440px;
+}
+
+.punt p {
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+}
+
+.fieldgoal {
+    display: flex;
+    flex-direction: row-reverse;    
+    justify-content: flex-end;
+    margin-left: 100px;
+    background-color: rgba(88, 200, 55, 1);
+}
+
+.fieldgoal p {
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+}
+
+.fieldgoal img {
+    padding: 40px 60px 0 10px;
+    width: 440px;
+}
+
+.kickoff {
+    display: flex;
+    background-color: RGBA(0, 33, 68, 0.6);
+    margin-left: 180px;
+}
+
+.kickoff p {
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+}
+
+.kickoff img {
+    padding: 40px 10px 0 60px;
+    width: 440px;
+}
+
+
+h4 {
+    padding: 10px;
+    margin-top: -100px;
+}
+
+.pesquisa{
+    display: flex;
+    justify-content: space-around;
+    background-color: grey;
+    height: fit-content;
+    width: 100%;
+}
+
+.div_formPesquisa{
+    margin-left: 50px;
+    display: flex;
+    border: 2px black solid;
+    flex-direction: column;
+    width: 25%;
+    padding: 10px;
+}
+
+#div_resultado{
+    padding-left: 25px;
+    width: 25%;
+}
+
+#div_graficos{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 25px;
+}
+
+#graficos h2{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+}
+
+.rodape {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(51, 56, 77);
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+footer {
+    display: flex;
+    box-shadow: 0 0 10px 2px black;
+}
+
+#overlay, #overlay1, #overlay2, #overlay3, #overlay4, #overlay5, #overlay6{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+} 
+
+#telaOL, #telaRB, #telaWR, #telaQB, #telaDL, #telaLB, #telaDB {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(51, 56, 77);
+    width: 400px;
+    border: 3px solid green;
+} 
+
+#telaOL h2, #telaRB h2, #telaWR h2, #telaQB h2, #telaDL h2, #telaLB h2, #telaDB h2{
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+#telaOL button, #telaRB button, #telaWR button, #telaQB button, #telaDL button, #telaLB button, #telaDB button{
+    margin-top: 20px;
+    margin-left: 43%;
+    display: flex;
+    width: 20%;
+    justify-content: center;
+
+}
+
+.cardOL button, .cardCorredores button, .cardRecebedores button, .cardQuaterback button, .cardDB button, .cardDL button, .cardLB button{
+font-weight: 700;
+border-radius: 0px 0px 1.5rem 1.5rem;
+height: 3rem;
+width: 100%;
+display: flex;
+align-self: flex-end;
+align-content: center;
+justify-content: center;
+cursor: pointer;
+}
+

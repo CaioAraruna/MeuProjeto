@@ -1,0 +1,433 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceitos Futebol Americano</title>
+    <link rel="stylesheet" href="./css/FutAmericano.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div id="div_separacao">
+        <header id="header">
+            <nav>
+                <h1><a href="#header">Caio's Field</a></h1>
+
+                <ul>
+                    <li><a href="./pagFutAmericano.html#banner">Conceito Geral</a></li>
+                    <li><a href="./pagFutAmericano.html#Ataque">Ataque</a></li>
+                    <li><a href="./pagFutAmericano.html#Defesa">Defesa</a></li>
+                    <!-- <li><a href="">Login</a></li> -->
+                </ul>
+                <ul>
+                    <li id="Log-Out"><a
+                            href="C:\Users\ar-ar\OneDrive\Área de Trabalho\MEUS GIT's\Projeto-Individual\Home\rascunho.home.html">Log
+                            Out</a></li>
+                </ul>
+    </div>
+    </header>
+    <div class="banner" id="banner">
+        <div id="texto">
+            <h1>Conceito Geral</h1>
+            <p> O futebol americano jogado com 11x11, ou seja, cada time tem 11 jogadores. <br>
+                O jogo é basicamente uma disputa de território, o grande objetivo do esporte é chegar na "End Zone" e
+                fazer o famoso TOUCHDOWN, e para isso, o time que está atacando tem 4 tentativas para avançar 10 jardas,
+                quase 10 metros, pode-se utilizar de passes ou corridas. Caso não consiga o avanço o time perde o
+                direito de posse de bola e o outro time começa a atacar a partir de onde parou, por isso os times que
+                estão atacando costumam chutar a bola (Punt) na ultima tentativa caso percebam que não vão conseguir
+                todo o avanço necessário! Quando se chuta a bola, o time defensor irá pegar a bola e tentar um retorno,
+                e a partir do ponto maximo de avanço começa suas 4 tentativas para o FIRST DOWN, o first down é a
+                sinalização de que cosneguiram o avanço de 10 jardas e terão mais 4 descidas para tentar avançar mais
+                10. <br>
+                Eu sei que parece um pouco complexo mas continue vendo a explicação que tudo vai fazer sentido!
+            </p>
+        </div>
+    </div>
+
+
+    <section class="Ataque pad" id="Ataque">
+        <h2> O ataque consiste em quatro grupos de posição</h2>
+        <div class="cards">
+            <div class="cardOL">
+                <div class="cardIMG">
+                    <img
+                        src="https://media3.giphy.com/media/3ohc10msXKEKs8WW1G/200w.gif?cid=6c09b952nor3uasws0yih47egx27nwn2mgz6vxpnhvb8kfzs&ep=v1_gifs_search&rid=200w.gif&ct=g">
+                </div>
+                <h4> Linha Ofensiva (OL) </h4>
+                <p> A Linha Ofensiva, tambem conhecida como OL, é formada por 5....</p>
+                <button onclick="verMais()"> Veja Mais</button>
+            </div>
+            <div id="overlay">
+                <div id="telaOL">
+                    <h2>Dados extras sobre OL's</h2>  
+                  <p> Um OL tem em média 1.93m e pesa 143kg. <br> 
+                Um jogador titular tem um salário médio de 5.5 milhões de dólares por ano e atualmente o maior salário de um OL pertence a Laremy Tunsil que recebe 25 milhões</p>
+                    <button onclick="fecharFormulario()">Fechar</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="cardRecebedores">
+                <div class="cardIMG">
+                    <img
+                        src="https://static.clubs.nfl.com/image/private/t_editorial_landscape_mobile/f_auto/falcons/qdvj9ayyi34o9slhevoz.gif">
+                </div>
+                <h4> Recebedores (WR) </h4>
+                <p> Os Recebedores, como o próprio nome diz....</p>
+                <button onclick="verMais2()"> Veja Mais</button>
+            </div>
+                <div id="overlay2">
+                    <div id="telaWR">
+                        <h2>Dados extras sobre WR's</h2>  
+                      <p> Um WR tem em média 1.83m e pesa 90kg. <br> 
+                    Um jogador titular tem um salário médio de 7.5 milhões de dólares por ano e atualmente o maior salário de um Wide Receiver pertence a Tyreek Hill que recebe 30 milhões</p>
+                        <button onclick="fecharFormulario2()">Fechar</button>
+                    </div>
+                </div>
+
+
+
+            <div class="cardCorredores">
+                <div class="cardIMG">
+                    <img src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/19230280/PSUPITT_RushTDang2.gif">
+                </div>
+                <h4> Corredores (RB)</h4>
+                <p> Os corredores, ou Running Backs em inglês, são responsáveis...</p>
+                <button onclick="verMais1()"> Veja Mais</button>
+
+                <div id="overlay1">
+                    <div id="telaRB">
+                        <h2>Dados extras sobre RB's</h2>  
+                      <p> Um RB tem em média 1.78m e pesa 96kg. <br> 
+                    Um jogador titular tem um salário médio de 3.3 milhões de dólares por ano e atualmente o maior salário de um Running Back pertence a Christian McCaffrey que recebe 16 milhões</p>
+                        <button onclick="fecharFormulario1()">Fechar</button>
+                    </div>
+                </div>
+    
+
+
+            </div>
+            <div class="cardQuaterback">
+                <div class="cardIMG">
+                    <img src="https://images.rivals.com/image/upload/f_auto,q_auto,t_large/szo1rtmappfh775rx3vk">
+                </div>
+                <h4> Quaterback (QB) </h4>
+                <p> Os Quaterbacks são o cérebro do time, possivelmente essa é a posição mais dificil de todos os esportes</p>
+                <button onclick="verMais3()"> Veja Mais</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="overlay3">
+        <div id="telaQB">
+            <h2>Dados extras sobre QB's</h2>  
+          <p> Um QB tem em média 1.88m e pesa 99kg. <br> 
+        Um jogador titular tem um salário médio de 7.8 milhões de dólares por ano e atualmente o maior salário de um Quaterback pertence a Lamar Jackson que recebe 52 milhões</p>
+            <button onclick="fecharFormulario3()">Fechar</button>
+        </div>
+    </div>
+
+    <!-- AQUI ACABA A SECTION DO ATAQUE -->
+
+    <section class="Defesa pad" id="Defesa">
+        <h2> A defesa possui 3 grupos de posição</h2>
+        <div class="cardsD">
+            <div class="cardDL">
+                <div class="cardIMG">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLz_xiO0kyMGHMqHCNpUtibaOSvsOs8KIL1pgN5P5-dwJG6aWapLYV3PJMUs-NhNnHZfA&usqp=CAU">
+                </div>
+                <h4> Linha Defensiva</h4>
+                <p> A linha Defensiva tem multiplas formações, mas o normal são 4 ou 5 jogadores....</p>
+                <button onclick="verMais4()"> Veja Mais</button>
+            </div>
+            <div id="overlay4">
+                <div id="telaDL">
+                    <h2>Dados extras sobre DL's</h2>  
+                  <p> Um DL tem em média 1.83m e pesa 131kg. <br> 
+                Um jogador titular tem um salário médio de 5.5 milhões de dólares por ano e atualmente o maior salário de um DL pertence a Aaron Donald que recebe 31.7 milhões</p>
+                    <button onclick="fecharFormulario4()">Fechar</button>
+                </div>
+            </div>
+
+
+
+            <div class="cardLB">
+                <div class="cardIMG">
+                    <img
+                        src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/23580788/95281997_FB89_49DA_B0FC_8442267C299F.gif">
+                </div>
+                <h4> LineBackers (LB) </h4>
+                <p> O grupod e Linebackers geralmente é formado por...</p>
+                <button onclick="verMais5()"> Veja Mais</button>
+            </div>
+            <div id="overlay5">
+                <div id="telaLB">
+                    <h2>Dados extras sobre LB's</h2>  
+                  <p> Um LB tem em média 1.88m e pesa 108kg. <br> 
+                Um jogador titular tem um salário médio de 4.1 milhões de dólares por ano e atualmente o maior salário de um DL pertence a Roquan Smith que recebe 20 milhões</p>
+                    <button onclick="fecharFormulario5()">Fechar</button>
+                </div>
+            </div>
+
+
+            <div class="cardDB">
+                <div class="cardIMG">
+                    <img src="https://media.pff.com/2020/07/GilmoreFINC.gif">
+                </div>
+                <h4> Defensive Backs (DB) </h4>
+                <p> É possivel dividir esse grupo em 2 posições distintas, Cornerbacks (CB) e Safety (S) </p>
+                <button onclick="verMais6()"> Veja Mais</button>
+            </div>
+        </div>
+        <div id="overlay6">
+            <div id="telaDB">
+                <h2>Dados extras sobre DB's</h2>  
+              <p> Um DB tem em média 1.83m e pesa 89kg. <br> 
+            Um jogador titular tem um salário médio de 5 milhões de dólares por ano e atualmente o maior salário de um DL pertence a Jaire Alexander que recebe 21  milhões</p>
+                <button onclick="fecharFormulario6()">Fechar</button>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- AQUI ACABA A SECTION DA DEFESA -->
+
+
+    <section class="Chutes" id="chutes">
+        <h2> O futebol americano possui 3 tipos de chute</h2>
+        <div class="div_chutes">
+            <div class="punt">
+                <img src="https://qph.cf2.quoracdn.net/main-qimg-fc699da3d0d35b75055a84e15ba728e1"
+                    alt="Demonstração de Punt">
+                <p> Nós temos o punt, que é utilizado quando o time percebe que não vai conseguir o FIRST DOWN em sua
+                    ultima chance (4º descida) então o time chuta a bola o mais alto e longe possivel para que o time
+                    adversário tenha que começar mais longe de sua END-ZONE</p>
+            </div>
+
+            <div class="fieldgoal">
+                <img src="https://media.tenor.com/KVBh7r7M_-cAAAAd/minnesota-vikings-missed-field-goal.gif"
+                    alt="Field Goal errado">
+                <p>O field goal é aquele chute em que a bola precisa passar no meio daquele Y gigante que fica no final
+                    do campo. Caso o chute seja valido, ele vale 3 pontos, porém, também é possivel chutar um field goal
+                    após o TOUCHDOWN, esse chute vale 1 ponto e é chamado de EXTRAPOINT</p>
+            </div>
+
+            <div class="kickoff">
+                <img src="https://i.gifer.com/EimZ.gif" alt="Field Goal errado">
+                <p>O Kickoff é o chute que da inicio ao jogo e tambem o chute que o time que pontuou dá para que o
+                    adversário comece a atacar</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AQUI ACABA A SECTION DOS CHUTES -->
+
+
+    <section class="pesquisa">
+        <div class="div_formPesquisa">
+            <h3>Responda a pesquisa e veja em qual posição seu biotipo melhor se encaixa</h3>
+            Informe sua altura <input type="number" id="input_altura" placeholder="Ex: 173"> <br>
+            Informe seu peso <input type="number" id="input_peso" placeholder="Ex: 85"> <br>
+            Você deseja jogar no ataque ou defesa? 
+            <select name="" id="input_lado">
+                <option value=""> ------- </option>
+                <option value="Ataque">Ataque</option>
+                <option value="Defesa">Defesa</option>
+            </select> <br>
+            <!-- TROCAR ESSE INPUT DO LADO E COLOCAR O SELECTION -->
+            Para qual time você torce? <input type="text" id="input_time"> <br>
+            <!-- TROCAR ESSE INPUT DO TIME E COLOCAR O SELECTION -->
+            <button onclick="simular()">Simular</button>
+        </div>
+
+        <div id="div_resultado"> </div>
+
+    </section>
+
+
+    <section id="graficos">
+        <h2>CONFIRA ALGUNS GRÁFICOS COM AS RESPOSTAS DE NOSSOS LEITORES</h2>
+        <div id="div_graficos">
+            <div class="grafico-1">
+                <div class="grafico-lado">
+                    <section style="width: 30vw; height: 40vh;">
+                        <canvas class="grafico_lado" id="graficoPizza_lado"></canvas>
+                    </section>
+                </div>
+            </div>
+            <div class="grafico-2">
+                <div class="grafico-time">
+                    <section style="width: 30vw; height: 40vh;">
+                        <canvas class="grafico_time" id="grafico_time"></canvas>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="rodape">
+            <span>Projeto de Caio Araruna - Versão Beta
+            </span>
+        </div>
+    </footer>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    var listaPosicao = [];
+    var listaTime = [];
+
+    // DEIXAR O GRÁFICO RESPONSIVO AOS BAGULHOS DO BANCOS
+    // GRAFICO ATAQUE/DEFESA
+    var contextoGrafico1 = document.getElementById('graficoPizza_lado').getContext('2d');
+
+    var grafico1 = new Chart(contextoGrafico1, {
+        type: 'pie',
+        data: {
+            labels: ['Fatia1', 'Fatia2'],
+            datasets: [{
+                data: [60, 20, 15],  // Proporções das fatias
+                backgroundColor: ['red', 'green', 'blue'],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            // Configurações adicionais do gráfico
+        }
+    });
+
+
+    // GRAFICO TIME
+
+    var contextoGrafico2 = document.getElementById('grafico_time').getContext('2d');
+
+    var grafico2 = new Chart(contextoGrafico2, {
+        type: 'bar',
+        data: {
+            labels: ['Seahawks', 'Ravens', 'Browns', 'Patriots'],
+            datasets: [{
+                data: [60, 20, 15],  // Proporções das fatias
+                backgroundColor: ['red', 'green', 'blue', 'purple'],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            // Configurações adicionais do gráfico
+        }
+    });
+
+
+    function simular() {
+        var altura = input_altura.value;
+        var peso = input_peso.value;
+        var time = input_time.value;
+        var lado = input_lado.value;
+
+
+        if(lado == "Ataque" && altura <= 180 && peso > 75 & peso <= 100){
+        div_resultado.innerHTML = `Você poderia ser um Running Back no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`;
+        }
+
+        if(lado == "Ataque" && altura > 180 && peso < 100){
+            div_resultado.innerHTML = `Você poderia ser um Wide Receiver no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
+        }
+
+        if(lado == "Ataque" && altura >= 188 && peso < 100){
+            div_resultado.innerHTML = `Você poderia ser um Quaterback no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
+        }
+
+        if(lado == "Ataque" && altura >= 188 && peso > 100){
+            div_resultado.innerHTML = `Você poderia ser um jogador de linha no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
+        }
+
+        if(lado == "Defesa" && altura < 180 && peso < 100){
+            div_resultado.innerHTML = `Você poderia ser um Safety no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
+        }
+
+        if(lado == "Defesa" && altura > 180 && peso < 100){
+            div_resultado.innerHTML = `Você poderia ser um Corner Back no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
+        }
+
+        if(lado == "Defesa" && altura > 185 && peso >= 100){
+            div_resultado.innerHTML = `Você poderia ser um LineBacker no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
+        }
+
+        if(lado == "Defesa" && altura > 190 && peso >= 110){
+            div_resultado.innerHTML = `Você poderia ser um Defensive Line no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
+        }
+    }
+
+
+
+    function verMais() {
+       overlay.style.display = "flex";
+    }
+    function fecharFormulario() {
+        overlay.style.display = "none";
+    }
+
+
+    function verMais1() {
+       overlay1.style.display = "flex";
+    }
+    function fecharFormulario1() {
+        overlay1.style.display = "none";
+    }
+
+
+    function verMais2() {
+       overlay2.style.display = "flex";
+    }
+    function fecharFormulario2() {
+        overlay2.style.display = "none";
+    }
+
+
+    function verMais3() {
+       overlay3.style.display = "flex";
+    }
+    function fecharFormulario3() {
+        overlay3.style.display = "none";
+    }
+
+
+    function verMais4() {
+       overlay4.style.display = "flex";
+    }
+    function fecharFormulario4() {
+        overlay4.style.display = "none";
+    }
+
+
+    function verMais5() {
+       overlay5.style.display = "flex";
+    }
+    function fecharFormulario5() {
+        overlay5.style.display = "none";
+    }
+
+
+    function verMais6() {
+       overlay6.style.display = "flex";
+    }
+    function fecharFormulario6() {
+        overlay6.style.display = "none";
+    }
+</script>

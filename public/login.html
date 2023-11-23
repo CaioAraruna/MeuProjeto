@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/autentificar.js"></script>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <h1><a href="#header">Caio's Field</a></h1>
+
+            <ul>
+                <span id="ajuste">
+                <li><a href="./index.html">Tela Inicial</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./cadastro.html">Cadastro</a></li>
+                </span>
+            </ul>
+        </div>
+    </header>
+
+        <container class="container_login"> 
+            <h1 class="titulo_login">Login</h1>
+
+            <div class="div_email">
+               <p>E-mail</p> 
+                <input type="text" id="input_email" placeholder="INSIRA O E-MAIL CADASTRADO"> 
+            </div>
+                
+            <div class="div_senha">
+                <p>Senha</p>
+                <input type="password" id="input_senha" placeholder="INSIRA A SENHA CADASTRADA"> 
+                <div id="div_mensagem"></div> <!-- Caso a senha ou e-mail estejam errados -->
+            </div>
+
+            <button class="botao_login" onclick="autenticar()"> Entrar </button>
+        </container>
+   
+</body>
+</html>

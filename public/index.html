@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caio Field</title>
+    <link rel="stylesheet" href="./css/index.css">
+    
+</head>
+<body>
+
+    <header id="header">
+        <nav>
+            <h1><a href="#header">Caio's Field</a></h1>
+
+            <ul>
+                <span id="ajuste">
+                    <li><a href="./index.html">Tela Inicial</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./cadastro.html">Cadastro</a></li>
+                </span>
+            </ul>
+        </div>
+    </header>
+
+<h1> O QUE DESEJA APRENDER ?</h1>
+
+<container class="divisoriaBody"> 
+
+    <div id="div_football">
+        Futebol Americano
+    
+    <!-- <a href=""></a> Linkar com a pagina correspondente de tutorial -->
+    </div>
+    
+    <div id="div_flag">
+        Flag Football
+    <!-- <a href=""></a> Linkar com a pagina correspondente de tutorial -->
+    </div>
+
+</container>
+ 
+</body>
+</html>
+
+<script>
+
+
+var imagem1 = div_football;
+var imagem2 = div_flag;
+var textoFutAmericano = "O futebol americano é o xadrez mais agressivo de todos os tempos. Um esporte cheio de contato e com quase infinitas estratégias. Clique no banner para aprender mais"
+var textoFlag = "O flag é a versão mais dinâmica e com menos contato que o futebol americano tradicional. Essa modalidade vem se popularizando muito ao redor do mundo e será uma modalidade olímpica em 2028. Clique no banner para aprender mais"
+
+imagem1.addEventListener('mouseover',() => {
+    imagem2.textContent = textoFutAmericano;
+    imagem2.style.backgroundImage = 'none';
+})
+
+
+imagem1.addEventListener('mouseout', () => {
+    setTimeout(function() {
+    imagem2.style.backgroundImage = 'url(https://wallpapers.com/images/hd/no-contact-sports-flag-football-33hi6f224sdjsavz.jpg)',
+    imagem2.textContent = 'Flag Football';
+    }, 500)
+});
+
+
+
+imagem2.addEventListener('mouseover',() => {
+    imagem1.textContent = textoFlag;
+    imagem1.style.backgroundImage = 'none';
+})
+
+
+imagem2.addEventListener('mouseout', () => {
+    setTimeout(function() {
+    imagem1.style.backgroundImage = 'url(https://www.betus.com.pa/wp-content/uploads/2022/12/063_1452189400-1.webp)',
+    imagem1.textContent = 'Futebol Americano';
+    }, 500)
+});
+
+
+
+
+  
+</script>
