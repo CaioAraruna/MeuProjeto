@@ -64,14 +64,19 @@ app.post("/autenticar", (req,res)=>{
 
 
 app.post("/simular", (req,res)=>{
-    var time = input_time.value;
-    var sqlString = `INSERT INTO franquia (team) VALUE ('${time}')`;
+ 
+  var time = req.body.timeServer;
+
+
+    var sqlString = `INSERT INTO franquia (idTeam, team) VALUE (null, '${time}')`;
     db.query(sqlString, (err, results) => {
         if(err) {
             console.error('Erro:', err);
             res.status(500).json({error: 'erro 500'});
+            
         } else {
             res.json(results);
+          
         }
     });
 })

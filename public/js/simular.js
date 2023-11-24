@@ -1,13 +1,9 @@
-var altura = input_altura.value;
-var peso = input_peso.value;
-var time = input_time.value;
-var lado = input_lado.value;
 
 function simular(){
-    altura = input_altura.value;
-    peso = input_peso.value;
-    time = input_time.value;
-    lado = input_lado.value;
+   var altura = input_altura.value;
+   var peso = input_peso.value;
+   var time = input_time.value;
+   var lado = input_lado.value;
 
     fetch("/simular", {
         method: "POST",
@@ -18,7 +14,7 @@ function simular(){
           alturaServer: altura,
           pesoServer: peso,
           timeServer: time,
-          ladoServer: lado,
+          ladoServer: lado
         })
       })
     }

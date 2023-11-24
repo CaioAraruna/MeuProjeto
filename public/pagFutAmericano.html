@@ -10,6 +10,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/simular.js"></script>
+    
 </head>
 
 <body>
@@ -23,6 +25,7 @@
                     <li><a href="./pagFutAmericano.html#banner">Conceito Geral</a></li>
                     <li><a href="./pagFutAmericano.html#Ataque">Ataque</a></li>
                     <li><a href="./pagFutAmericano.html#Defesa">Defesa</a></li>
+                    <li><a href="./pagFutAmericano.html#chutes">Chutes</a></li>
                     <!-- <li><a href="">Login</a></li> -->
                 </ul>
                 <ul>
@@ -249,6 +252,7 @@
             Para qual time você torce? <input type="text" id="input_time"> <br>
             <!-- TROCAR ESSE INPUT DO TIME E COLOCAR O SELECTION -->
             <button onclick="simular()">Simular</button>
+            
         </div>
 
         <div id="div_resultado"> </div>
@@ -334,45 +338,45 @@
     });
 
 
-    function simular() {
-        var altura = input_altura.value;
-        var peso = input_peso.value;
-        var time = input_time.value;
-        var lado = input_lado.value;
+    // function simular() {
+    //     var altura = input_altura.value;
+    //     var peso = input_peso.value;
+    //     var time = input_time.value;
+    //     var lado = input_lado.value;
 
 
-        if(lado == "Ataque" && altura <= 180 && peso > 75 & peso <= 100){
-        div_resultado.innerHTML = `Você poderia ser um Running Back no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`;
-        }
+    //     if(lado == "Ataque" && altura <= 180 && peso > 75 & peso <= 100){
+    //     div_resultado.innerHTML = `Você poderia ser um Running Back no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`;
+    //     }
 
-        if(lado == "Ataque" && altura > 180 && peso < 100){
-            div_resultado.innerHTML = `Você poderia ser um Wide Receiver no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
-        }
+    //     if(lado == "Ataque" && altura > 180 && peso < 100){
+    //         div_resultado.innerHTML = `Você poderia ser um Wide Receiver no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
+    //     }
 
-        if(lado == "Ataque" && altura >= 188 && peso < 100){
-            div_resultado.innerHTML = `Você poderia ser um Quaterback no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
-        }
+    //     if(lado == "Ataque" && altura >= 188 && peso < 100){
+    //         div_resultado.innerHTML = `Você poderia ser um Quaterback no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
+    //     }
 
-        if(lado == "Ataque" && altura >= 188 && peso > 100){
-            div_resultado.innerHTML = `Você poderia ser um jogador de linha no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
-        }
+    //     if(lado == "Ataque" && altura >= 188 && peso > 100){
+    //         div_resultado.innerHTML = `Você poderia ser um jogador de linha no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
+    //     }
 
-        if(lado == "Defesa" && altura < 180 && peso < 100){
-            div_resultado.innerHTML = `Você poderia ser um Safety no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
-        }
+    //     if(lado == "Defesa" && altura < 180 && peso < 100){
+    //         div_resultado.innerHTML = `Você poderia ser um Safety no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
+    //     }
 
-        if(lado == "Defesa" && altura > 180 && peso < 100){
-            div_resultado.innerHTML = `Você poderia ser um Corner Back no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
-        }
+    //     if(lado == "Defesa" && altura > 180 && peso < 100){
+    //         div_resultado.innerHTML = `Você poderia ser um Corner Back no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
+    //     }
 
-        if(lado == "Defesa" && altura > 185 && peso >= 100){
-            div_resultado.innerHTML = `Você poderia ser um LineBacker no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
-        }
+    //     if(lado == "Defesa" && altura > 185 && peso >= 100){
+    //         div_resultado.innerHTML = `Você poderia ser um LineBacker no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
+    //     }
 
-        if(lado == "Defesa" && altura > 190 && peso >= 110){
-            div_resultado.innerHTML = `Você poderia ser um Defensive Line no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
-        }
-    }
+    //     if(lado == "Defesa" && altura > 190 && peso >= 110){
+    //         div_resultado.innerHTML = `Você poderia ser um Defensive Line no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
+    //     }
+    // }
 
 
 
