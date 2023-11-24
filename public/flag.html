@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conceitos Flag Football</title>
     <link rel="stylesheet" href="./css/flag.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
-<body>
+<body> 
 
     <header id="header">
         <nav>
@@ -96,8 +100,46 @@
         </div>
     </section>
 
+    <section class="pesquisa">
+        <div class="div_formPesquisa">
+            <h3>Responda a pesquisa e veja em qual posição seu biotipo melhor se encaixa</h3>
+            Informe sua altura <input type="number" id="input_altura" placeholder="Ex: 173"> <br>
+            Informe seu peso <input type="number" id="input_peso" placeholder="Ex: 85"> <br>
+            Você deseja jogar no ataque ou defesa? 
+            <select name="" id="input_lado">
+                <option value=""> ------- </option>
+                <option value="Ataque">Ataque</option>
+                <option value="Defesa">Defesa</option>
+            </select> <br>
+            <!-- TROCAR ESSE INPUT DO LADO E COLOCAR O SELECTION -->
+            Para qual time você torce? <input type="text" id="input_time"> <br>
+            <!-- TROCAR ESSE INPUT DO TIME E COLOCAR O SELECTION -->
+            <button onclick="simular()">Simular</button>
+        </div>
 
+        <div id="div_resultado"> </div>
 
+    </section>
+    <section id="graficos">
+        <h2>CONFIRA ALGUNS GRÁFICOS COM AS RESPOSTAS DE NOSSOS LEITORES</h2>
+        <div id="div_graficos">
+            <div class="grafico-1">
+                <div class="grafico-lado">
+                    <section style="width: 30vw; height: 40vh;">
+                        <canvas class="grafico_lado" id="graficoPizza_lado"></canvas>
+                    </section>
+                </div>
+            </div>
+            <div class="grafico-2">
+                <div class="grafico-time">
+                    <section style="width: 30vw; height: 40vh;">
+                        <canvas class="grafico_time" id="grafico_time"></canvas>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+    </section>
     <footer>
         <div class="rodape">
             <span>Projeto de Caio Araruna - Versão Beta
@@ -108,3 +150,90 @@
 </body>
 
 </html>
+
+<script>
+    
+    var listaPosicao = [];
+    var listaTime = [];
+
+    // DEIXAR O GRÁFICO RESPONSIVO AOS BAGULHOS DO BANCOS
+    // GRAFICO ATAQUE/DEFESA
+    var contextoGrafico1 = document.getElementById('graficoPizza_lado').getContext('2d');
+
+    var grafico1 = new Chart(contextoGrafico1, {
+        type: 'pie',
+        data: {
+            labels: ['Fatia1', 'Fatia2'],
+            datasets: [{
+                data: [60, 20, 15],  // Proporções das fatias
+                backgroundColor: ['red', 'green', 'blue'],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            // Configurações adicionais do gráfico
+        }
+    });
+
+
+    // GRAFICO TIME
+
+    var contextoGrafico2 = document.getElementById('grafico_time').getContext('2d');
+
+    var grafico2 = new Chart(contextoGrafico2, {
+        type: 'bar',
+        data: {
+            labels: ['Seahawks', 'Ravens', 'Browns', 'Patriots'],
+            datasets: [{
+                data: [60, 20, 15],  // Proporções das fatias
+                backgroundColor: ['red', 'green', 'blue', 'purple'],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            // Configurações adicionais do gráfico
+        }
+    });
+
+
+    function simular() {
+        var altura = input_altura.value;
+        var peso = input_peso.value;
+        var time = input_time.value;
+        var lado = input_lado.value;
+
+
+        if(lado == "Ataque" && altura <= 180 && peso > 75 & peso <= 100){
+        div_resultado.innerHTML = `Você poderia ser um Running Back no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`;
+        }
+
+        if(lado == "Ataque" && altura > 180 && peso < 100){
+            div_resultado.innerHTML = `Você poderia ser um Wide Receiver no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
+        }
+
+        if(lado == "Ataque" && altura >= 188 && peso < 100){
+            div_resultado.innerHTML = `Você poderia ser um Quaterback no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
+        }
+
+        if(lado == "Ataque" && altura >= 188 && peso > 100){
+            div_resultado.innerHTML = `Você poderia ser um jogador de linha no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
+        }
+
+        if(lado == "Defesa" && altura < 180 && peso < 100){
+            div_resultado.innerHTML = `Você poderia ser um Safety no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
+        }
+
+        if(lado == "Defesa" && altura > 180 && peso < 100){
+            div_resultado.innerHTML = `Você poderia ser um Corner Back no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
+        }
+
+        if(lado == "Defesa" && altura > 185 && peso >= 100){
+            div_resultado.innerHTML = `Você poderia ser um LineBacker no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
+        }
+
+        if(lado == "Defesa" && altura > 190 && peso >= 110){
+            div_resultado.innerHTML = `Você poderia ser um Defensive Line no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
+        }
+    }
+
+</script>
