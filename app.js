@@ -36,6 +36,7 @@ app.post("/cadastrar", (req,res)=>{
     var email = req.body.emailServer;
     var team = req.body.teamServer;
     var senha = req.body.senhaServer;
+    
     var sqlString = `INSERT INTO usuario (nome, email, team, senha) VALUES ('${nome}', '${email}', '${team}', '${senha}')`;
     db.query(sqlString, (err, results) => {
         if (err) {
@@ -66,9 +67,9 @@ app.post("/autenticar", (req,res)=>{
 app.post("/simular", (req,res)=>{
  
   var time = req.body.timeServer;
+  var posicao = req.body.posicaoServer;
 
-
-    var sqlString = `INSERT INTO franquia (idTeam, team) VALUE (null, '${time}')`;
+    var sqlString = `INSERT INTO franquia (idTeam, team, posicao) VALUE (null, '${time}', '${posicao}')`;
     db.query(sqlString, (err, results) => {
         if(err) {
             console.error('Erro:', err);
@@ -79,6 +80,20 @@ app.post("/simular", (req,res)=>{
           
         }
     });
+})
+
+app.get("/grafico/:valor", (req,res)=>{
+  var opcao = req.params.valor;
+  var sqlString = `SELECT ${opcao}, COUNT(${opcao}) FROM franquia GROUP BY ${opcao}`;
+  db.query(sqlString, (err, results) => {
+    if(err) {
+        console.error('Erro:', err);
+        res.status(500).json({error: 'erro 500'});
+        
+    } else {
+        res.json({"dados": results});
+    }
+});
 })
 
 // server

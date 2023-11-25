@@ -28,7 +28,7 @@ function cadastrar() {
         emailServer: email,
         teamServer: team,
         senhaServer: senha,
-      }) ,
+      })
     })
   if (permiteCadastro) {
     window.location.href = `./login.html`

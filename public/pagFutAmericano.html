@@ -7,14 +7,15 @@
     <title>Conceitos Futebol Americano</title>
     <link rel="stylesheet" href="./css/FutAmericano.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/simular.js"></script>
+   
     
 </head>
 
-<body>
+<body onload="">
 
     <div id="div_separacao">
         <header id="header">
@@ -290,95 +291,14 @@
     </footer>
     </div>
 
-</body>
 
+</body>
 </html>
+<script src="./js/grafico.js"></script>
 
 <script>
-    var listaPosicao = [];
-    var listaTime = [];
 
-    // DEIXAR O GRÁFICO RESPONSIVO AOS BAGULHOS DO BANCOS
-    // GRAFICO ATAQUE/DEFESA
-    var contextoGrafico1 = document.getElementById('graficoPizza_lado').getContext('2d');
-
-    var grafico1 = new Chart(contextoGrafico1, {
-        type: 'pie',
-        data: {
-            labels: ['Fatia1', 'Fatia2'],
-            datasets: [{
-                data: [60, 20, 15],  // Proporções das fatias
-                backgroundColor: ['red', 'green', 'blue'],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            // Configurações adicionais do gráfico
-        }
-    });
-
-
-    // GRAFICO TIME
-
-    var contextoGrafico2 = document.getElementById('grafico_time').getContext('2d');
-
-    var grafico2 = new Chart(contextoGrafico2, {
-        type: 'bar',
-        data: {
-            labels: ['Seahawks', 'Ravens', 'Browns', 'Patriots'],
-            datasets: [{
-                data: [60, 20, 15],  // Proporções das fatias
-                backgroundColor: ['red', 'green', 'blue', 'purple'],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            // Configurações adicionais do gráfico
-        }
-    });
-
-
-    // function simular() {
-    //     var altura = input_altura.value;
-    //     var peso = input_peso.value;
-    //     var time = input_time.value;
-    //     var lado = input_lado.value;
-
-
-    //     if(lado == "Ataque" && altura <= 180 && peso > 75 & peso <= 100){
-    //     div_resultado.innerHTML = `Você poderia ser um Running Back no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`;
-    //     }
-
-    //     if(lado == "Ataque" && altura > 180 && peso < 100){
-    //         div_resultado.innerHTML = `Você poderia ser um Wide Receiver no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
-    //     }
-
-    //     if(lado == "Ataque" && altura >= 188 && peso < 100){
-    //         div_resultado.innerHTML = `Você poderia ser um Quaterback no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
-    //     }
-
-    //     if(lado == "Ataque" && altura >= 188 && peso > 100){
-    //         div_resultado.innerHTML = `Você poderia ser um jogador de linha no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
-    //     }
-
-    //     if(lado == "Defesa" && altura < 180 && peso < 100){
-    //         div_resultado.innerHTML = `Você poderia ser um Safety no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
-    //     }
-
-    //     if(lado == "Defesa" && altura > 180 && peso < 100){
-    //         div_resultado.innerHTML = `Você poderia ser um Corner Back no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
-    //     }
-
-    //     if(lado == "Defesa" && altura > 185 && peso >= 100){
-    //         div_resultado.innerHTML = `Você poderia ser um LineBacker no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
-    //     }
-
-    //     if(lado == "Defesa" && altura > 190 && peso >= 110){
-    //         div_resultado.innerHTML = `Você poderia ser um Defensive Line no ${time} "COLOCAR IMAGEM DE ALGUM JOGADOR"`
-    //     }
-    // }
-
-
+    
 
     function verMais() {
        overlay.style.display = "flex";
