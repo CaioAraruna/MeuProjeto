@@ -19,7 +19,7 @@ var grafico1 = new Chart(contextoGrafico1, {
 
 async function dados1() {
     try {
-        const response = await fetch("/grafico/team", { method: "GET" });
+        const response = await fetch("/grafico/posicao", { method: "GET" });
         if (!response.ok) {
             throw new Error("Erro!");
         }
@@ -39,8 +39,8 @@ async function testeDados() {
         contagem = [];
 
         for (i in dados.dados){
-            labels.push(dados.dados[i].team);
-            contagem.push(dados.dados[i]["COUNT(team)"]);
+            labels.push(dados.dados[i].posicao);
+            contagem.push(dados.dados[i]["COUNT(posicao)"]);
         }
     
         grafico1.data.labels = labels;
@@ -83,19 +83,3 @@ function hexadecimal(){
     return cor;
 }
 
-var contextoGrafico2 = document.getElementById('grafico_time').getContext('2d');
-
-var grafico2 = new Chart(contextoGrafico2, {
-    type: 'bar',
-    data: {
-        labels: ['Seahawks', 'Ravens', 'Browns', 'Patriots'],
-        datasets: [{
-            data: [60, 20, 15],  // Proporções das fatias
-            backgroundColor: ['red', 'green', 'blue', 'purple'],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        // Configurações adicionais do gráfico
-    }
-});

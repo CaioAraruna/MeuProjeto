@@ -85,6 +85,22 @@ app.post("/simular", (req,res)=>{
 app.get("/grafico/:valor", (req,res)=>{
   var opcao = req.params.valor;
   var sqlString = `SELECT ${opcao}, COUNT(${opcao}) FROM franquia GROUP BY ${opcao}`;
+ 
+  db.query(sqlString, (err, results) => {
+    if(err) {
+        console.error('Erro:', err);
+        res.status(500).json({error: 'erro 500'});
+        
+    } else {
+        res.json({"dados": results});
+    }
+});
+})
+
+app.get("/grafico2/:valor", (req,res)=>{
+  var opcao = req.params.valor;
+  var sqlString = `SELECT ${opcao}, COUNT(${opcao}) FROM franquia GROUP BY ${opcao}`;
+
   db.query(sqlString, (err, results) => {
     if(err) {
         console.error('Erro:', err);
