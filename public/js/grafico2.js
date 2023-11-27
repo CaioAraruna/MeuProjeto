@@ -7,6 +7,7 @@ var grafico2 = new Chart(contextoGrafico2, {
     data: {
         labels: labels2,
         datasets: [{
+            label: "Times Selecionados",
             data: contagem2,  // Proporções das fatias
             backgroundColor: [],
             borderWidth: 1
@@ -45,7 +46,7 @@ async function dados2() {
     
          grafico2.data.labels = labels2;
           grafico2.data.datasets[0].data = contagem2;
-          grafico2.data.datasets[0].backgroundColor = coresAleatorias2();
+          grafico2.data.datasets[0].backgroundColor = coresAleatorias2(contagem2.length);
 
           grafico2.update();
 
@@ -58,7 +59,7 @@ async function dados2() {
  }
 
      function resetarGrafico2(){
-         var grafico = testeDados2();
+         var grafico2 = testeDados2();
          grafico2.clear();
          grafico2.reset();
      }
@@ -66,11 +67,13 @@ async function dados2() {
  testeDados2();
 
  function coresAleatorias2(contador){
+     var tamanho = labels2.lenght;
      var cores = [];
      for(var i = 0; i < contador; i++){
          cores.push(hexadecimal2());
      }
-    
+     console.log(cores);
+    return cores;
  }
 
 
