@@ -30,13 +30,13 @@
 
 <container class="divisoriaBody"> 
 
-    <div id="div_football">
-        Futebol Americano
+        <div id="div_football" onclick="redirecionamento()">
+            Futebol Americano
+            <!-- <a href=""></a> Linkar com a pagina correspondente de tutorial -->
+        </div>
+
     
-    <!-- <a href=""></a> Linkar com a pagina correspondente de tutorial -->
-    </div>
-    
-    <div id="div_flag">
+    <div id="div_flag" onclick="redirecionamento()">
         Flag Football
     <!-- <a href=""></a> Linkar com a pagina correspondente de tutorial -->
     </div>
@@ -47,6 +47,10 @@
 </html>
 
 <script>
+
+    function redirecionamento(){
+        window.location.href = "./cadastro.html";
+    }
 
 
 var imagem1 = div_football;
