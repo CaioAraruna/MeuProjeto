@@ -71,6 +71,12 @@ a {
 
 .banner h1 {
     padding: 0px 25px;
+    filter: drop-shadow(0px 10px 4px rgb(88, 200, 55));
+}
+
+button:hover{
+    background-color: rgb(88, 200, 55);
+    transition: 0.5s;
 }
 
 .banner p {
@@ -353,6 +359,28 @@ h4 {
 
 #input_altura, #input_peso, #input_time, #input_lado{
     background-color: rgb(51, 56, 77);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.div_formPesquisa button{
+    margin-left: 95px;
+    display: flex;
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_formPesquisa button:hover{
+    background-color: rgb(51, 56, 77);
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    border-color: black;
+    border: 5px;
+    transition: 1s;
 }
 
 #div_graficos{
@@ -414,7 +442,7 @@ footer {
     justify-content: center;
 }
 
-#telaOL button, #telaRB button, #telaWR button, #telaQB button, #telaDL button, #telaLB button, #telaDB button{
+#telaOL button, #telaWR button, #telaQB button, #telaDL button, #telaLB button, #telaDB button, #overlay1 #telaRB button{
     margin-top: 20px;
     margin-left: 43%;
     display: flex;
@@ -423,7 +451,7 @@ footer {
 
 }
 
-.cardOL button, .cardCorredores button, .cardRecebedores button, .cardQuaterback button, .cardDB button, .cardDL button, .cardLB button{
+.cardOL button, .cardRecebedores button, .cardQuaterback button, .cardDB button, .cardDL button, .cardLB button, .cardCorredores button{
 font-weight: 700;
 border-radius: 0px 0px 1.5rem 1.5rem;
 height: 3rem;
@@ -434,4 +462,5 @@ align-content: center;
 justify-content: center;
 cursor: pointer;
 }
+
 

@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
     <link rel="stylesheet" href="./css/login.css">
     <script src="./js/autentificar.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header id="header">
         <nav>
@@ -14,30 +19,32 @@
 
             <ul>
                 <span id="ajuste">
-                <li><a href="./index.html">Tela Inicial</a></li>
-                <li><a href="./login.html">Login</a></li>
-                <li><a href="./cadastro.html">Cadastro</a></li>
+                    <li><a href="./index.html">Tela Inicial</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./cadastro.html">Cadastro</a></li>
                 </span>
             </ul>
-        </div>
+            </div>
     </header>
 
-        <container class="container_login"> 
-            <h1 class="titulo_login">Login</h1>
+    <container class="container_login">
+        <h1 class="titulo_login">Login</h1>
 
-            <div class="div_email">
-               <p>E-mail</p> 
-                <input type="text" id="input_email" placeholder="INSIRA O E-MAIL CADASTRADO"> 
-            </div>
-                
-            <div class="div_senha">
-                <p>Senha</p>
-                <input type="password" id="input_senha" placeholder="INSIRA A SENHA CADASTRADA"> 
-                <div id="div_mensagem"></div> <!-- Caso a senha ou e-mail estejam errados -->
-            </div>
+        <div class="div_email">
+            <p>E-mail</p>
+            <input type="text" id="input_email" placeholder="INSIRA O E-MAIL CADASTRADO">
+            <i class="email icones"></i>
+        </div>
 
-            <button class="botao_login" onclick="autenticar()"> Entrar </button>
-        </container>
-   
+        <div class="div_senha">
+            <p>Senha</p>
+            <input type="password" id="input_senha" placeholder="INSIRA A SENHA CADASTRADA">
+            <div id="div_mensagem"></div> <!-- Caso a senha ou e-mail estejam errados -->
+        </div>
+
+        <button class="botao_login" onclick="autenticar()"> Entrar </button>
+    </container>
+
 </body>
+
 </html>

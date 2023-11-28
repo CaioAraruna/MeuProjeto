@@ -2,6 +2,8 @@
     margin: 0;
     scroll-behavior: smooth;
     height: fit-content;
+    font-family: poppins;
+    padding: 0;
 }
 
 body{
@@ -13,6 +15,10 @@ body{
 
 .header{
     display: flex;
+}
+
+h1{
+    margin-bottom: -10px;
 }
 
 nav{
@@ -56,14 +62,15 @@ a{
 
 .container_login{
     width: 40%;
-    height: 450px;
-    background-color: rgba(51, 56, 77,.9);
+    height: fit-content;
     display: flex;
     flex-direction: column;
     margin: auto;
     border-radius: 15px;
     border: 2px solid rgb(88, 200, 55);
     margin-top: 50px; 
+    background-color: transparent;
+    backdrop-filter: blur(10px);
 }
 
 .div_email, .div_senha{
@@ -85,19 +92,50 @@ p{
 
 #input_email, #input_senha, #input_nome, #input_team, #input_confirmacao{
     width: 270px;
-    height: 20px;
+    height: 30px;
     border-radius: 10px;
     margin-left: 30%;
-    border: 3px solid black;
+    border-bottom: 4px solid black;
+    background-image: url('../assets/mail-outline.svg');
+    background-size: 30px;
+    background-position: 99%;
+    background-repeat: no-repeat;
+    font-weight: bold;
 }
+
+#input_nome{
+    background-image: url('../assets/person-circle-outline.svg');
+}
+
+#input_senha{
+    background-image: url('../assets/key-outline.svg');
+}
+
+#input_confirmacao{
+    background-image: url('../assets/key-outline.svg');
+}
+
+#input_team{
+    background-image: url('../assets/star-outline.svg');
+}
+
+
 
 .botao_cadastro{
     width: 200px;
     border-radius: 15px;
-    height: 25px;
+    height: 30px;
     margin-left: 35%;
     margin-top: 50px;
     border: 2px solid black;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: green;
+    transition: 1s;
+    font-weight: bold;
 }
 
 #aCadastro{
