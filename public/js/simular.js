@@ -56,8 +56,13 @@ function simular() {
     },
     body: JSON.stringify({
       posicaoServer: posicao,
-      timeServer: time
+      timeServer: time,
+      alturaServer: altura,
+      pesoServer: peso,
+      ladoServer: lado
+  
     })
   })
   resetarGrafico();
+  resetarGrafico2();
 }

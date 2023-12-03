@@ -57,10 +57,8 @@ async function testeDados() {
     }
 }
 
-    function resetarGrafico(){
-        var grafico = testeDados();
-        grafico.clear();
-        grafico.reset();
+     function resetarGrafico(){
+         var grafico = testeDados();
     }
 
 testeDados();

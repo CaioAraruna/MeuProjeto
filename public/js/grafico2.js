@@ -60,8 +60,6 @@ async function dados2() {
 
      function resetarGrafico2(){
          var grafico2 = testeDados2();
-         grafico2.clear();
-         grafico2.reset();
      }
 
  testeDados2();

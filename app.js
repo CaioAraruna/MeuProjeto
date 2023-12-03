@@ -68,8 +68,11 @@ app.post("/simular", (req,res)=>{
  
   var time = req.body.timeServer;
   var posicao = req.body.posicaoServer;
+  var altura = req.body.alturaServer;
+  var peso = req.body.pesoServer;
+  var lado = req.body.ladoServer;
 
-    var sqlString = `INSERT INTO franquia (idTeam, team, posicao) VALUE (null, '${time}', '${posicao}')`;
+    var sqlString = `INSERT INTO Pesquisa (idPesquisa, altura, peso, lado, team, posicao) VALUE (null, '${altura}', '${peso}', '${lado}', '${time}', '${posicao}')`;
     db.query(sqlString, (err, results) => {
         if(err) {
             console.error('Erro:', err);
@@ -84,7 +87,7 @@ app.post("/simular", (req,res)=>{
 
 app.get("/grafico/:valor", (req,res)=>{
   var opcao = req.params.valor;
-  var sqlString = `SELECT ${opcao}, COUNT(${opcao}) FROM franquia GROUP BY ${opcao}`;
+  var sqlString = `SELECT ${opcao}, COUNT(${opcao}) FROM Pesquisa GROUP BY ${opcao}`;
  
   db.query(sqlString, (err, results) => {
     if(err) {
@@ -99,7 +102,7 @@ app.get("/grafico/:valor", (req,res)=>{
 
 app.get("/grafico2/:valor", (req,res)=>{
   var opcao = req.params.valor;
-  var sqlString = `SELECT ${opcao}, COUNT(${opcao}) FROM franquia GROUP BY ${opcao}`;
+  var sqlString = `SELECT ${opcao}, COUNT(${opcao}) FROM Pesquisa GROUP BY ${opcao}`;
 
   db.query(sqlString, (err, results) => {
     if(err) {

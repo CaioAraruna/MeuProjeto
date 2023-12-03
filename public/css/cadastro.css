@@ -141,3 +141,8 @@ button:hover{
 #aCadastro{
     color: black;
 }
+
+#div_nome, #div_email, #div_senha, #div_confirmacao{
+    display: flex;
+    justify-content: center;
+}
