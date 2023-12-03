@@ -357,6 +357,7 @@ h4 {
 #div_resultado{
     padding-left: 25px;
     width: 25%;
+    color: white;
 }
 
 #input_altura, #input_peso, #input_time, #input_lado{
