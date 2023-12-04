@@ -466,4 +466,10 @@ justify-content: center;
 cursor: pointer;
 }
 
+.seta-1 {
+    border-left: 30px solid #C00;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    float: left;
+}
 

@@ -35,5 +35,7 @@ function autenticar() {
         console.error("Erro durante a solicitação:", error);
     });
 console.log(autenticado);
+div_emailErrado.innerHTML = "O e-mail informado não possui cadastro"
+div_senhaErrada.innerHTML = "Senha não existente para o e-mail informado"
 
 }

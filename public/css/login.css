@@ -123,3 +123,7 @@ p{
     font-weight: bold;
 }
 
+#div_emailErrado, #div_senhaErrada{
+    display: flex;
+   justify-content: center;
+}

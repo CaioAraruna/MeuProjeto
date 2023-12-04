@@ -1,22 +1,21 @@
 *{
     margin: 0;
     scroll-behavior: smooth;
+    font-family: poppins;
 }
 
 body{ 
     background-color: rgb(51, 56, 77);
 }
 
-header{
+header {
     background-color: rgb(51, 56, 77);
     margin-top: 0;
-    /* padding: 10px; */
     display: flex;
     align-items: center;
     height: 60px;
     /* backdrop-filter: blur(40px); */
     width: 100%;
-    /* position: fixed; */
     border-radius: 5px;
 }
 
