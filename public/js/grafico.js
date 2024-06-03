@@ -7,13 +7,13 @@ var grafico1 = new Chart(contextoGrafico1, {
     data: {
         labels: labels,
         datasets: [{
-            data: contagem,  // Proporções das fatias
+            data: contagem,  
             backgroundColor: [],
             borderWidth: 1
         }]
     },
     options: {
-        // Configurações adicionais do gráfico
+      
     }
 });
 

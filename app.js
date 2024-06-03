@@ -3,10 +3,6 @@ const sql = require("mssql");
 const mysql = require("mysql2");
 const bodyParser = require("body-parser");
 
-
-
-// DB
-// CONFIGURA OQ ENTRA NO BANCO
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
@@ -14,7 +10,7 @@ const db = mysql.createConnection({
     database: 'caioField'
   });
   
-  // CONECTA NO MEU BANCO DE DADOS 
+
   db.connect((err) => {
     if (err) {
       console.error('ERRO BD:', err);
@@ -24,7 +20,6 @@ const db = mysql.createConnection({
   });
 
 
-// APP
 const app = express();
 app.use(express.json());
 app.use("/",express.static("public"));

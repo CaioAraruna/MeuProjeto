@@ -142,7 +142,7 @@ button:hover{
     color: black;
 }
 
-#div_nome, #div_email, #div_senha, #div_confirmacao{
+#div_nome, #div_email, #div_senha, #div_confirmacao, #div_time{
     display: flex;
     justify-content: center;
 }
